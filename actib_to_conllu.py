@@ -1,3 +1,6 @@
+import re
+import actib_UD_lookup
+
 def actib_to_conllu(fname):
     
     fhandle = fname[:-4]
