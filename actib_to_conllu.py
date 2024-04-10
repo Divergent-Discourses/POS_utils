@@ -1,5 +1,5 @@
 import re
-import actib_UD_lookup
+from actib_UD_lookup import UD_lookup
 
 def actib_to_conllu(fname):
     
