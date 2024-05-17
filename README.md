@@ -1,4 +1,13 @@
-AcTib Setup for Apple M1 Computers:
+This repository contains scripts for converting plain text outputs from Meelen et al.’s ACTib project (https://github.com/lothelanor/actib) into CoNLL-U formatted data. Our project trains small Tibetan language models using SpaCy, which is capable of learning from CoNLL-U data out-of-the-box.
+
+To use the script, save the .py file at or above the location of the target directory. From the command line, call the script with:
+
+``` python -m actib_to_conllu.py ```
+
+You will be prompted for the path to your target directory. From there, the script will write CoNLL-U files in a new directory at the same level as the target. 
+
+
+**AcTib Setup for Apple M1 Computers**:
 
 1.	So far, I only managed to get the pipeline working on Linux, and not on a Windows VM. Starting from nothing, on my Mac laptop, here’s what I did:
 
