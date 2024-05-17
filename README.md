@@ -24,9 +24,12 @@ AcTib Setup for Apple M1 Computers:
       6.	BeautifulSoup4
 
     vi.	In the Linux command line, run the following commands:
+    
       1.	sudo apt install timbl
       2.	sudo apt install mbt
 
     vii.	Install Git with sudo apt install git
+    
     viii.	Navigate to the directory where you want the AcTib code to be stored and clone with git clone http://github.com/lothelanor/actib/ 
+    
     ix.	Now, you can follow the instructions in the AcTib documentation to run the preprocessing -> pos-directory pipeline. 
