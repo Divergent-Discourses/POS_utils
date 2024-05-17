@@ -1,5 +1,6 @@
 import re
 from actib_UD_lookup import UD_lookup
+import os
 
 def actib_to_conllu(fname):
     
@@ -64,3 +65,8 @@ def actib_to_conllu(fname):
                 
             sentence_counter += 1
             outfile.write('\n\n')
+
+if __name__ == '__main__':
+    dir = input('Input path to target directory')
+    for f in os.listdir(dir):
+        actib_to_conllu(f)
