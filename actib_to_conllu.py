@@ -67,6 +67,9 @@ def actib_to_conllu(fname):
             outfile.write('\n\n')
 
 if __name__ == '__main__':
-    dir = input('Input path to target directory')
-    for f in os.listdir(dir):
-        actib_to_conllu(f)
+    dir = input('Input path to target directory: ')
+    if os.path.isdir(dir):
+        for f in os.listdir(dir):
+            actib_to_conllu(f)
+    else:
+        print('Error: invalid path')
